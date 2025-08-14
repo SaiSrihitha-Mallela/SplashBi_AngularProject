@@ -1,0 +1,10 @@
+<!-- Buttons for each export format, each with a unique ID -->
+<div class="export-controls" style="margin-bottom: 10px; display: flex; gap: 10px;">
+    <button id="export-excel-button" (click)="exportAsExcel()">Export to Excel</button>
+    <button id="export-pdf-button" (click)="exportAsPdf()">Export to PDF</button>
+    <button id="export-ppt-button" (click)="exportAsPpt()">Export to PPT</button>
+</div>
+
+<ag-grid-angular style="width: 100%; height: 500px;" class="ag-theme-quartz" [rowData]="rowData"
+    [columnDefs]="columnDefs" [pagination]="true" [paginationPageSize]="100" (gridReady)="onGridReady($event)">
+</ag-grid-angular>

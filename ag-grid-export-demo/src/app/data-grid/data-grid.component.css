@@ -1,0 +1,22 @@
+.custom-pagination {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.custom-pagination button {
+    margin: 2px;
+    padding: 5px 10px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+}
+
+.custom-pagination button.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.custom-pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
